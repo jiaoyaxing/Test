@@ -55,4 +55,11 @@ public class RegexTest {
 		}
 		
 	}
+	
+	@Test
+	public void test5(){
+		String s = "@@";
+		String[] split = s.split("|");
+		System.out.println(split.length);
+	}
 }
