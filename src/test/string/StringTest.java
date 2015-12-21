@@ -1,5 +1,7 @@
 package test.string;
 
+import java.util.Random;
+
 import org.junit.Test;
 
 import sun.security.provider.MD5;
@@ -31,4 +33,21 @@ public class StringTest {
 		
 	}
 
+	@Test
+	public void random(){
+		Random r = new Random();
+		for (int i = 0; i < 100; i++) {
+			System.out.println(r.nextInt(10));
+		}
+		
+	}
+	
+	//8000.00
+	@Test
+	public void numtest(){
+		String s = "8000.00";
+		int a = Integer.parseInt(s);
+		System.out.println(a);
+	}
+	
 }
