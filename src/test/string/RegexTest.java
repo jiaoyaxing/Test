@@ -62,4 +62,13 @@ public class RegexTest {
 		String[] split = s.split("|");
 		System.out.println(split.length);
 	}
+	
+	@Test
+	public void test6(){
+		String reg = "\\d+";
+		String s = "1.1";
+		boolean matches = Pattern.matches(reg, s);
+		System.out.println(matches);
+		
+	}
 }
