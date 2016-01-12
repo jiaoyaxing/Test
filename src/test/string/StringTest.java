@@ -50,4 +50,10 @@ public class StringTest {
 		System.out.println(a);
 	}
 	
+	@Test
+	public void test5(){
+		String s = "sddd@";
+		String[] split = s.split("@");
+		System.out.println(split.length);
+	}
 }
