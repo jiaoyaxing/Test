@@ -28,14 +28,44 @@ public class InetTest {
 	
 	@Test
 	public void test1(){
-		String host = "www.baidu.com";
+		String host = "www.microsoft.com";
 		try {
 			InetAddress[] addresses = Inet6Address.getAllByName(host);
 			for (InetAddress a : addresses) {
 				System.out.println(a.getClass());
 				System.out.println(a);
+				System.out.println(a.isReachable(100));
 			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	public void test2(){
+		try {
+			InetAddress a = InetAddress.getByName("208.201.239.37");
+			System.out.println(a);
 		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public void test3(){
+		try {
+			InetAddress localHost = InetAddress.getLocalHost();
+			System.out.println(localHost);
+			System.out.println(localHost.isAnyLocalAddress());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public void test4(){
+		try {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}

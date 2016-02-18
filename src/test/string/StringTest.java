@@ -52,7 +52,7 @@ public class StringTest {
 	
 	@Test
 	public void test5(){
-		String s = "sddd@";
+		String s = "sd@@dd";
 		String[] split = s.split("@");
 		System.out.println(split.length);
 	}
