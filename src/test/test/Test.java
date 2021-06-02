@@ -1,5 +1,7 @@
 package test.test;
 
+import java.time.Clock;
+
 public class Test {
 
 	public static void main(String[] args) {
@@ -8,7 +10,8 @@ public class Test {
 	}
 	
 	public void test(){
-		Apple apple = new Apple();
+		System.out.println("d");
+		//Apple apple = new Apple();
 		/*
 		Apple a1 = apple.apple;
 		Apple a2 = a1.apple;

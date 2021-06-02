@@ -1,9 +1,11 @@
 package test.thread.syn;
 
+import java.util.Collections;
+
 public class Main {
 
 	public static void main(String[] args) {
-		test2();
+		test3();
 	}
 	
 	public static void test1(){
@@ -22,4 +24,12 @@ public class Main {
 		threadA.start();
 		threadB.start();
 	}
+
+	public static void test3(){
+		ThreadC threadC0 = new ThreadC();
+		ThreadC threadC1 = new ThreadC();
+		threadC0.start();
+		threadC1.start();
+	}
+
 }
